@@ -25,7 +25,7 @@ def reply_hi(message):
 import os
 if 'RENDER' in os.environ:
     bot.remove_webhook()
-    bot.set_webhook(url=f'https://YOUR_RENDER_URL/{API_TOKEN}')
+    bot.set_webhook(url='https://your-service-name.onrender.com/YOUR_BOT_TOKEN')
 else:
     # For local testing
     bot.polling()
